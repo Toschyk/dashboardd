@@ -1,0 +1,215 @@
+.jumbotron{
+  background-color: #e6f5ff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.datepicker {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 1100px;
+}
+
+/* Добавляем стили для дат */
+.dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dates span {
+  display: inline-block;
+  width: 3%;
+  text-align: center;
+}
+
+/* Добавляем стили для ползунка */
+.slider {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 1px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 30px solid red;
+}
+
+.chart-wrapper {
+  background-color: rgb(206, 233, 246);
+  overflow: hidden;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+:root {
+  --white: #fff;
+  --divider: lightgrey;
+  --body: #f5f7f8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chart-wrapper .chart-values {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.chart-wrapper .chart-values li {
+  flex: 1;
+  min-width: 30px;
+  text-align: center;
+}
+
+.chart-wrapper .chart-values li:not(:last-child) {
+  position: relative;
+}
+
+.chart-wrapper .chart-values li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 510px;
+  border-right: 1px solid var(--divider);
+}
+
+.chart-wrapper .chart-bars li {
+  position: relative;
+  color: var(--white);
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 1px 20px;
+  width: 0;
+  opacity: 0;
+  transition: all 0.65s linear 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+  .chart-wrapper .chart-bars li {
+    padding: 10px;
+  }
+}
+
+table {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+table th {
+  color: #fff;
+  background-color: #4792c4;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px solid transparent;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.attendances{
+  display: flex;
+  align-items: center;
+  background-color: #c4e7ff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 18px 0px rgb(224, 207, 207);
+}
+
+.attendance-text p{
+  padding: 50px 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.spidometr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  color: #4473cc;
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+.image{
+  width: 370px;
+  height: 260px;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

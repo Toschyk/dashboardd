@@ -1,0 +1,57 @@
+@media (min-width: 1300px) and (max-width: 20000px) {
+    .logo {
+        width: 150px;
+    }
+
+    .navbar_link a {
+        font-size: 35px;
+    }
+
+    .search {
+        width: 50px;
+    }
+
+    .heading {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .heading_title {
+        font-size: 30px;
+    }
+
+    .video_block {
+        width: 200px;
+        height: 200px;
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: 650px;
+    }
+
+    .block_nav_a a {
+        font-size: 30px;
+    }
+
+    .about_heading{
+        font-size: 3vw;
+    }
+
+    .about_title{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .action {
+        width: 100%;
+    }
+
+    .acion_image {
+        width: 20%;
+    }
+
+    .acion_image_two {
+        width: 50%;
+    }
+}
